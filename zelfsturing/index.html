@@ -6,55 +6,51 @@
 <title>Stageverkenning strategisch sportmarketeer · Wassim El Mesbahi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#EFEDE5;--card:#FBFAF6;--ink:#18211C;--ink-2:#3E4842;--ink-3:#767F77;--pitch:#175139;--pitch-l:#2F7D52;--gold:#8F6E12;--gold-l:#DBC069;--hair:#E4DFD2}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{background:#d9d6cc;font-family:'Open Sans',system-ui,sans-serif;color:var(--ink);font-size:15px;line-height:1.45}
-.slide{width:1600px;height:900px;margin:32px auto;background:var(--paper);position:relative;overflow:hidden;padding:46px 56px 40px;display:flex;flex-direction:column;box-shadow:0 20px 60px -30px rgba(0,0,0,.35)}
+body{background:#d9d6cc;font-family:'Open Sans',system-ui,sans-serif;color:var(--ink);line-height:1.45}
+.slide{width:1600px;height:900px;margin:32px auto;background:var(--paper);position:relative;overflow:hidden;padding:44px 56px 40px 66px;display:flex;flex-direction:column;box-shadow:0 20px 60px -30px rgba(0,0,0,.35)}
 .slide::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(var(--pitch),var(--pitch-l))}
 .top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:22px}
 .eyebrow{font-family:'Bricolage Grotesque';font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--gold)}
-h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:46px;line-height:1.05;letter-spacing:-.01em;margin-top:6px}
-h1 em{font-style:normal;color:var(--pitch)}
-.who{font-size:14px;color:var(--ink-3);text-align:right;line-height:1.5}
+h1{font-family:'Bricolage Grotesque';font-weight:800;font-size:46px;line-height:1.05;margin-top:6px}
+.who{font-size:14px;color:var(--ink-3);text-align:right}
 .who b{color:var(--ink-2)}
-.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex:1;min-height:0}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;flex:1;min-height:0}
 .card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;min-height:0}
-.org{display:flex;align-items:center;gap:10px;margin-bottom:4px}
-.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--pitch);color:#fff;border-radius:99px;padding:3px 10px}
-.tag.gold{background:var(--gold)}
-h2{font-family:'Bricolage Grotesque';font-weight:700;font-size:27px;line-height:1.15}
-.role{font-weight:600;color:var(--pitch);font-size:17.5px;margin:6px 0 3px}
-.meta{font-size:14px;color:var(--ink-3);margin-bottom:14px}
-h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:16px 0 8px}
+h2{font-family:'Bricolage Grotesque';font-weight:700;font-size:26px;line-height:1.15}
+.role{font-weight:600;color:var(--pitch);font-size:16.5px;margin-top:3px}
+h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:14.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:14px 0 6px}
 ul{list-style:none}
-li{position:relative;padding-left:18px;margin-bottom:8px;font-size:16.5px;color:var(--ink-2)}
+li{position:relative;padding-left:18px;margin-bottom:6px;font-size:16px;color:var(--ink-2)}
 li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--pitch-l)}
-.band{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px}
-.band .card{padding:16px 22px;background:var(--pitch);border:none;color:#fff}
-.band h3{color:var(--gold-l);margin-top:0}
-.band p{font-size:16.5px;color:#E8EFE9}
+figure img{width:100%;object-fit:cover;object-position:top left;border-radius:9px;border:1px solid var(--hair);display:block}
+figcaption{font-size:12.5px;color:var(--ink-3);margin-top:4px}
+.vac figure{margin-top:auto;padding-top:12px}
+.vac img{aspect-ratio:16/8.2}
+.band{margin-top:18px;background:var(--pitch);border-radius:16px;padding:16px 24px;color:#fff;display:flex;gap:18px;align-items:baseline}
+.band h3{color:var(--gold-l);margin:0;white-space:nowrap}
+.band p{font-size:17px;color:#E8EFE9}
+.shots{display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0 12px}
+.shots img{aspect-ratio:16/7.4}
+.kv p{font-size:16px;color:var(--ink-2);margin-bottom:8px}
+.kv p b{color:var(--ink)}
+.match{margin-top:auto;border-top:1px solid var(--hair);padding-top:12px;font-size:16px}
+.match b{color:var(--pitch)}
+.grid3{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;flex:1;min-height:0}
+.grid3 .card{grid-column:span 2;justify-content:center;padding:26px 30px}
+.grid3 .card.wide{grid-column:span 3}
+.grid3 h3{margin-top:0;font-size:17px;margin-bottom:12px}
+.grid3 li{font-size:20px;margin-bottom:10px}
+.concl{margin-top:20px;background:var(--pitch);border-radius:16px;padding:22px 28px;color:#fff;display:flex;gap:28px;align-items:center}
+.concl h2{color:#fff;flex:0 0 220px}
+.concl p{font-size:21px;line-height:1.5;color:#EEF3EF}
+.concl b{color:var(--gold-l)}
 .foot{margin-top:12px;font-size:12.5px;color:var(--ink-3)}
 .foot a{color:var(--ink-3)}
-/* slide 2 */
-.co{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex:1;min-height:0}
-.shots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 14px}
-figure img{width:100%;aspect-ratio:0.86/1;object-fit:cover;object-position:top left;border-radius:9px;border:1px solid var(--hair);display:block}
-figcaption{font-size:12.5px;color:var(--ink-3);margin-top:4px}
-.co p{font-size:15.5px;color:var(--ink-2);margin-bottom:9px}
-.co p b{color:var(--ink)}
-.match{margin-top:auto;border-top:1px solid var(--hair);padding-top:12px;font-size:15.5px}
-.match b{color:var(--pitch)}
-.score{display:block;font-family:'Bricolage Grotesque';font-weight:800;color:var(--gold);font-size:16px;margin-bottom:3px}
-/* slide 3 */
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:18px;flex:1;min-height:0}
-.grid3 .card p{font-size:16.5px;color:var(--ink-2)}
-.concl{grid-column:1/-1;background:var(--pitch);color:#fff;border:none;flex-direction:row;gap:28px;align-items:center}
-.concl h2{color:#fff;font-size:26px;flex:0 0 280px}
-.concl p{font-size:19px!important;line-height:1.5;color:#EEF3EF!important}
-.concl b{color:var(--gold-l)}
 @media print{body{background:none}.slide{margin:0;box-shadow:none;page-break-after:always}}
 @page{size:1600px 900px;margin:0}
 @media screen and (max-width:1650px){body{zoom:calc(100vw / 1680px)}}
@@ -62,103 +58,80 @@ figcaption{font-size:12.5px;color:var(--ink-3);margin-top:4px}
 </head>
 <body>
 
-<!-- SLIDE 1 -->
 <section class="slide">
  <div class="top">
-  <div><div class="eyebrow">Zelfsturing naar niveau 3 · 1 / 3 · De functie in vacatures</div>
-  <h1>Strategisch sportmarketeer <em>in de praktijk</em></h1></div>
-  <div class="who"><b>Wassim El Mesbahi</b> · CE2F1 · Koers Bepalen N2<br>Drie actuele vacatures, geraadpleegd op 1 oktober 2026</div>
+  <div><div class="eyebrow">1 · De functie in vacatures</div><h1>Strategisch sportmarketeer: drie vacatures</h1></div>
+  <div class="who"><b>Wassim El Mesbahi</b> · CE2F1 · Zelfsturing naar niveau 3</div>
  </div>
  <div class="cols">
-  <div class="card">
-   <div class="org"><span class="tag">Sportmarketingbureau</span></div>
-   <h2>House of Sports</h2>
-   <div class="role">Specialist digitale marketing (merkstrategie en activatie)</div>
-   <div class="meta">Ouderkerk aan de Amstel · fulltime · medewerker · 3+ jaar ervaring</div>
-   <h3>Werkzaamheden</h3>
-   <ul><li>Digitale campagnes bedenken die passen bij de sponsorstrategie van merken als Odido, Univé, ARAG, KNVB en Feyenoord</li><li>Campagnes bouwen in Meta, TikTok en Google Ads en meten wat ze opleveren</li><li>Klanten adviseren over hun digitale aanpak</li></ul>
-   <h3>Gevraagd</h3>
-   <ul><li>Creatief én datagedreven</li><li>Relatiebouwer met strategisch advies</li><li>Gevoel voor wat sport met mensen doet</li></ul>
+  <div class="card vac">
+   <h2>House of Sports</h2><div class="role">Specialist digitale marketing</div>
+   <h3>Werkzaamheden</h3><ul><li>Digitale campagnes voor sponsors zoals KNVB en Feyenoord</li><li>Meten wat campagnes opleveren</li><li>Klanten adviseren</li></ul>
+   <h3>Skills</h3><ul><li>Creatief en datagedreven</li><li>Relatiebouwer</li></ul>
+   <figure><img src="img/hos_li.jpg" alt="Vacature House of Sports"><figcaption>Bewijs: vacature op LinkedIn</figcaption></figure>
   </div>
-  <div class="card">
-   <div class="org"><span class="tag gold">Voetbal-scale-up</span></div>
-   <h2>MatchWornShirt</h2>
-   <div class="role">Senior CRM Specialist</div>
-   <div class="meta">Amsterdam · 40 uur · senior · 3 tot 5 jaar ervaring · Engelstalig</div>
-   <h3>Werkzaamheden</h3>
-   <ul><li>Mede-eigenaar van de CRM-strategie voor een wereldwijde fanbase</li><li>Campagnes en automatische flows (e-mail, push, WhatsApp) die kijkers laten bieden op shirts</li><li>Sportmomenten vertalen naar campagnes voor fans en verzamelaars</li></ul>
-   <h3>Gevraagd</h3>
-   <ul><li>Data-gedreven, ervaring met marketingautomatisering</li><li>"Getting things done"-mentaliteit</li><li>Echte passie voor voetbal</li></ul>
+  <div class="card vac">
+   <h2>MatchWornShirt</h2><div class="role">Senior CRM Specialist</div>
+   <h3>Werkzaamheden</h3><ul><li>CRM-strategie voor een wereldwijde fanbase</li><li>Campagnes die fans laten bieden op shirts</li><li>Sportmomenten omzetten in campagnes</li></ul>
+   <h3>Skills</h3><ul><li>Datagedreven, marketingautomatisering</li><li>Passie voor voetbal</li></ul>
+   <figure><img src="img/mws_li.jpg" alt="Vacature MatchWornShirt"><figcaption>Bewijs: vacature op LinkedIn</figcaption></figure>
   </div>
-  <div class="card">
-   <div class="org"><span class="tag">Sportkoepel</span></div>
-   <h2>POS</h2>
-   <div class="role">Communicatiemedewerker</div>
-   <div class="meta">Halfweg · 32 tot 38 uur · instapniveau · CAO Sport schaal 8</div>
-   <h3>Werkzaamheden</h3>
-   <ul><li>Content maken over de ondernemende sport: interviews, video's en social posts</li><li>Middelen ontwikkelen over sociale veiligheid, kansengelijkheid en jeugd</li><li>POS zichtbaar maken bij ondernemers, beleidsmakers en partners</li></ul>
-   <h3>Gevraagd</h3>
-   <ul><li>Sterk schrijven en het juiste kanaal kiezen</li><li>Proactief en initiatiefrijk</li><li>Affiniteit met de maatschappelijke kracht van sport</li></ul>
+  <div class="card vac">
+   <h2>POS</h2><div class="role">Communicatiemedewerker</div>
+   <h3>Werkzaamheden</h3><ul><li>Content maken over de ondernemende sport</li><li>Middelen over sociale veiligheid en jeugd</li><li>Zichtbaarheid bij ondernemers en beleidsmakers</li></ul>
+   <h3>Skills</h3><ul><li>Sterk schrijven</li><li>Proactief en initiatiefrijk</li></ul>
+   <figure><img src="img/pos_li.jpg" alt="Vacature POS"><figcaption>Bewijs: vacature op LinkedIn</figcaption></figure>
   </div>
  </div>
- <div class="band">
-  <div class="card"><h3>Wat steeds terugkomt</h3><p>Passie voor sport, campagnes en content maken, en meten wat het oplevert. In alle drie werk je samen met partners: merken, clubs of beleidsmakers.</p></div>
-  <div class="card"><h3>Wat verschilt</h3><p>Het doel: merken laten scoren (bureau), omzet halen uit fans (scale-up) of meer mensen laten sporten (koepel). Ook het niveau verschilt: van instap bij POS tot senior bij MatchWornShirt.</p></div>
- </div>
+ <div class="band"><h3>Verschillen</h3><p>Het doel verschilt: merken laten scoren (bureau), omzet halen uit fans (scale-up) of meer mensen laten sporten (koepel). Het niveau ook: van instap bij POS tot senior bij MatchWornShirt.</p></div>
 </section>
 
-<!-- SLIDE 2 -->
 <section class="slide">
  <div class="top">
-  <div><div class="eyebrow">Zelfsturing naar niveau 3 · 2 / 3 · De bedrijven achter de vacatures</div>
-  <h1>Drie bedrijven, <em>drie werelden</em></h1></div>
-  <div class="who">Per bedrijf de website en de LinkedIn-vacature als kanaal<br>Screenshots gemaakt op 1 oktober 2026</div>
+  <div><div class="eyebrow">2 · De bedrijven achter de vacatures</div><h1>Website en online kanaal</h1></div>
+  <div class="who">Screenshots gemaakt op 1 oktober 2026</div>
  </div>
- <div class="co">
-  <div class="card">
+ <div class="cols">
+  <div class="card kv">
    <h2>House of Sports</h2>
-   <div class="shots"><figure><img src="img/hos_site.jpg" alt="Website House of Sports"><figcaption>Website</figcaption></figure><figure><img src="img/hos_li.jpg" alt="LinkedIn-vacature House of Sports"><figcaption>LinkedIn</figcaption></figure></div>
-   <p><b>Soort organisatie:</b> fullservice sportmarketingbureau dat merken en sportorganisaties helpt met sponsoring en activatie.</p>
-   <p><b>Presentatie:</b> donker, cinematisch en premium: een stadion op de achtergrond, weinig tekst, het werk staat centraal.</p>
-   <p><b>Tone of voice:</b> energiek en speels ("Ready, Set, Go!", "datafreak", "fluitend op kantoor").</p>
-   <div class="match"><span class="score">Match: hoog</span><b>Mijn match:</b> ja. Dicht op topsport en voetbal, veel afwisseling. Wel mis ik nog ervaring met digitale campagnes en data.</div>
+   <div class="shots"><figure><img src="img/hos_site.jpg" alt="Website House of Sports"><figcaption>Website</figcaption></figure><figure><img src="img/hos_ch.jpg" alt="Campagne ARAG en KNVB"><figcaption>Campagnepagina ARAG en KNVB</figcaption></figure></div>
+   <p><b>Organisatie:</b> sportmarketingbureau.</p>
+   <p><b>Presentatie:</b> donker en premium, het werk staat centraal.</p>
+   <p><b>Tone of voice:</b> energiek en speels.</p>
+   <div class="match"><b>Mijn match:</b> ja, dicht op voetbal en veel afwisseling.</div>
   </div>
-  <div class="card">
+  <div class="card kv">
    <h2>MatchWornShirt</h2>
-   <div class="shots"><figure><img src="img/mws_site.jpg" alt="Website MatchWornShirt"><figcaption>Website</figcaption></figure><figure><img src="img/mws_li.jpg" alt="LinkedIn-vacature MatchWornShirt"><figcaption>LinkedIn</figcaption></figure></div>
-   <p><b>Soort organisatie:</b> internationale scale-up en marktleider in wedstrijdgedragen shirts, met meer dan 400 partners zoals clubs.</p>
-   <p><b>Presentatie:</b> donker paars met shirts van topclubs en live veilingen "vanaf de aftrap": commercieel en gericht op de fan.</p>
-   <p><b>Tone of voice:</b> Engelstalig en ambitieus ("conquer the international football world").</p>
-   <div class="match"><span class="score">Match: hoogst</span><b>Mijn match:</b> past het best bij mijn ambitie: geld verdienen aan voetbal, samen met clubs. Deze functie is wel senior en technisch; een stage in partnerships zou beter passen.</div>
+   <div class="shots"><figure><img src="img/mws_site.jpg" alt="Website MatchWornShirt"><figcaption>Website</figcaption></figure><figure><img src="img/mws_ch.jpg" alt="Partnerships MatchWornShirt"><figcaption>Partnershipspagina</figcaption></figure></div>
+   <p><b>Organisatie:</b> internationale voetbal-scale-up, werkt samen met clubs.</p>
+   <p><b>Presentatie:</b> commercieel en gericht op de fan.</p>
+   <p><b>Tone of voice:</b> Engelstalig en ambitieus.</p>
+   <div class="match"><b>Mijn match:</b> ja, past het best bij mijn ambitie, maar deze functie is senior.</div>
   </div>
-  <div class="card">
+  <div class="card kv">
    <h2>POS</h2>
-   <div class="shots"><figure><img src="img/pos_site.jpg" alt="Website POS"><figcaption>Website</figcaption></figure><figure><img src="img/pos_li.jpg" alt="LinkedIn-vacature POS"><figcaption>LinkedIn</figcaption></figure></div>
-   <p><b>Soort organisatie:</b> koepel van ondernemende sportaanbieders, zoals fitnesscentra en padelaanbieders, die hun belangen behartigt bij beleid.</p>
-   <p><b>Presentatie:</b> blauw en groen, met de boodschap "meer mensen meer laten sporten en bewegen": maatschappelijk en betrouwbaar.</p>
+   <div class="shots"><figure><img src="img/pos_site.jpg" alt="Website POS"><figcaption>Website</figcaption></figure><figure><img src="img/pos_ch.jpg" alt="Nieuws POS"><figcaption>Nieuwspagina</figcaption></figure></div>
+   <p><b>Organisatie:</b> koepel van sportaanbieders, zoals fitness en padel.</p>
+   <p><b>Presentatie:</b> maatschappelijk en betrouwbaar.</p>
    <p><b>Tone of voice:</b> zakelijk en informatief.</p>
-   <div class="match"><span class="score">Match: gemiddeld</span><b>Mijn match:</b> interessant omdat het aansluit op T-Line en op instapniveau is. Wel minder voetbal en minder commercieel dan ik zoek.</div>
+   <div class="match"><b>Mijn match:</b> deels, wel instapniveau maar minder voetbal en commercie.</div>
   </div>
  </div>
 </section>
 
-<!-- SLIDE 3 -->
 <section class="slide">
  <div class="top">
-  <div><div class="eyebrow">Zelfsturing naar niveau 3 · 3 / 3 · Wat past bij mij</div>
-  <h1>Wat ik meeneem <em>richting stage</em></h1></div>
-  <div class="who">Gekoppeld aan mijn persoonlijk leerdoel:<br><b>de zakelijke en financiële kant van het voetbal</b></div>
+  <div><div class="eyebrow">3 · Wat past bij mij</div><h1>Wat ik meeneem richting stage</h1></div>
  </div>
  <div class="grid3">
-  <div class="card"><h3 style="margin-top:0">Spreekt me het meest aan</h3><ul><li>Partnerships en commercie in het voetbal, zoals bij MatchWornShirt</li><li>Campagnes en activaties rond echte sportmomenten</li><li>Direct contact met klanten, clubs en partners</li></ul></div>
-  <div class="card"><h3 style="margin-top:0">Spreekt me minder aan</h3><ul><li>Alleen technisch werk in tools, zonder contact met mensen</li><li>Vooral beleidsteksten schrijven, zonder commerciële kant</li><li>Een grote, formele organisatie waar ik weinig zie van de sport zelf</li></ul></div>
-  <div class="card"><h3 style="margin-top:0">Type stagebedrijf</h3><ul><li><b>Wel:</b> een club, sportmarketingbureau of voetbalbedrijf met een commerciële of partnershipafdeling en een dynamisch team</li><li><b>Niet:</b> een rol waarin ik alleen content maak of alleen beleid volg</li></ul></div>
-  <div class="card"><h3 style="margin-top:0">Kwaliteiten die al passen</h3><ul><li>Presenteren en overtuigen, bevestigd door twee docenten</li><li>Leiderschap: vier jaar trainer bij DSOV en de leiding in ons projectteam</li><li>Commercieel gevoel uit mijn werk bij KPN</li><li>Initiatief: ik bouwde zelf de app Personal OS</li></ul></div>
-  <div class="card"><h3 style="margin-top:0">Wat ik nog wil leren</h3><ul><li>Meten wat marketing oplevert: data, analytics en CRM</li><li>De financiële kant: sponsorwaarde en verdienmodellen van clubs</li><li>Zakelijk Engels, want de voetbalbusiness is internationaal</li><li>Mijn keuzes onderbouwen met bronnen</li></ul></div>
-  <div class="card"><h3 style="margin-top:0">Wat de vacatures me leerden</h3><p>Alle drie vragen ze 2 tot 5 jaar ervaring met data en meten. Mijn passie voor voetbal is een begin, maar wat me onderscheidt, is laten zien wat marketing oplevert.</p></div>
-  <div class="card concl"><h2>Mijn eerste conclusie</h2><p>Ik zoek een stage aan de <b>commerciële kant van het voetbal</b>, bij een club, sportmarketingbureau of voetbalbedrijf, waar ik met <b>partners en fans</b> werk en leer meten wat marketing oplevert. Een rol die puur beleidsmatig of puur technisch is, past minder bij mij.</p></div>
+  <div class="card"><h3>Spreekt me aan</h3><ul><li>Partnerships en commercie in het voetbal</li><li>Campagnes rond echte sportmomenten</li><li>Contact met clubs en partners</li></ul></div>
+  <div class="card"><h3>Spreekt me minder aan</h3><ul><li>Alleen technisch werk in tools</li><li>Alleen beleidsteksten schrijven</li></ul></div>
+  <div class="card"><h3>Type stagebedrijf</h3><ul><li><b>Wel:</b> club, sportmarketingbureau of voetbalbedrijf</li><li><b>Niet:</b> formele organisatie zonder commerciële kant</li></ul></div>
+  <div class="card wide"><h3>Kwaliteiten die passen</h3><ul><li>Presenteren en overtuigen</li><li>Leiderschap (trainer bij DSOV)</li><li>Commercieel gevoel (KPN)</li></ul></div>
+  <div class="card wide"><h3>Wat ik nog wil leren</h3><ul><li>Meten wat marketing oplevert (data en CRM)</li><li>De financiële kant van voetbalclubs</li><li>Zakelijk Engels</li></ul></div>
  </div>
- <div class="foot">Vacatures: <a href="https://nl.linkedin.com/jobs/view/specialist-digitale-marketing-at-house-of-sports-4470319369">House of Sports</a> · <a href="https://nl.linkedin.com/jobs/view/senior-crm-specialist-at-matchwornshirt-4469896849">MatchWornShirt</a> · <a href="https://nl.linkedin.com/jobs/view/communicatiemedewerker-at-pos-platform-ondernemende-sportaanbieders-4472494848">POS</a> · geraadpleegd op 1 oktober 2026 · <a href="Stageverkenning_Wassim_El_Mesbahi.pdf">download als PDF</a></div>
+ <div class="concl"><h2>Conclusie</h2><p>Ik zoek een stage aan de <b>commerciële kant van het voetbal</b>, waar ik met <b>clubs, partners en fans</b> werk. Een rol die alleen beleid of alleen techniek is, past minder bij mij.</p></div>
+ <div class="foot">Vacatures: <a href="https://nl.linkedin.com/jobs/view/specialist-digitale-marketing-at-house-of-sports-4470319369">House of Sports</a> · <a href="https://nl.linkedin.com/jobs/view/senior-crm-specialist-at-matchwornshirt-4469896849">MatchWornShirt</a> · <a href="https://nl.linkedin.com/jobs/view/communicatiemedewerker-at-pos-platform-ondernemende-sportaanbieders-4472494848">POS</a> · geraadpleegd op 1 oktober 2026</div>
 </section>
 
 </body>
