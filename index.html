@@ -194,10 +194,26 @@ body{font-size:16px}
 .eyebrow,.sec-head .idx,.card .top .tag,.balk dt,.facts dt,.dev-item .when,.verdieping h4{font-size:14px;letter-spacing:.06em}
 .st,.fb .meta,.gallery figcaption,.legend,.peer .vcap,.quote cite,.hero .photo-note,.applink,footer{font-size:14px}
 .sk .balk{grid-template-columns:180px 1fr}
+
+/* Telefoon: menu op eigen rij met swipe-hint, grotere tikvlakken, rustiger titels */
+@media (max-width:640px){
+  html{scroll-padding-top:112px}
+  .nav-in{flex-wrap:wrap;height:auto;padding-top:8px;row-gap:2px}
+  .brand{flex:1;min-height:44px}
+  .themebtn{width:44px;height:44px;font-size:21px;line-height:1}
+  .nav-links{order:3;flex-basis:100%;margin:0;padding:0 0 4px;-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}
+  .nav-links a{font-size:14px;padding:12px 11px;min-height:44px;display:inline-flex;align-items:center}
+  .card h3{font-size:18px;max-width:none;line-height:1.3;letter-spacing:-.01em}
+  .sec-head h2{max-width:none}
+  .linkbtn{min-height:44px}
+  footer a,.applink a{display:inline-block;padding:12px 0}
+  .lb .x{width:44px;height:44px}
+  .card .top .st{margin-left:0}
+}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="nav-in"><a href="#home" class="brand"><span class="dot"></span>Wassim&nbsp;El&nbsp;Mesbahi</a><div class="nav-links" id="navlinks"><a href="#home">Voorblad</a><a href="#leerdoelen">Leerdoelen</a><a href="#leeruitkomsten">Leeruitkomsten</a><a href="#ceskills">CE-skills</a><a href="#reflectie">Terugblik</a><a href="#richting">Conclusie</a><a href="#bijlagen">Bijlagen</a></div><button class="themebtn" id="themebtn" aria-label="Licht of donker">◐</button></div></nav>
+<nav class="nav"><div class="nav-in"><a href="#home" class="brand"><span class="dot"></span>Wassim&nbsp;El&nbsp;Mesbahi</a><div class="nav-links" id="navlinks"><a href="#home">Voorblad</a><a href="#leerdoelen">Leerdoelen</a><a href="#leeruitkomsten">Leeruitkomsten</a><a href="#ceskills">CE-skills</a><a href="#reflectie">Terugblik</a><a href="#richting">Conclusie</a><a href="#bijlagen">Bijlagen</a></div><button class="themebtn" id="themebtn" aria-label="Licht of donker"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="display:block;margin:auto"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></div></nav>
 <header class="hero" id="home"><div class="wrap"><span class="kicker">Portfolio Koers Bepalen, niveau 2</span><h1>Mijn ontwikkeling als <em>strategisch sportmarketeer</em></h1><p class="sub">Ik ben Wassim El Mesbahi, tweedejaarsstudent Commerciële Economie aan de Hogeschool van Amsterdam. In de challenge Koers Bepalen werk ik als strategisch sportmarketeer aan een advies voor T-Line Sportcenter. Later wil ik werken aan de <b>zakelijke en financiële kant van de voetbalwereld</b>, waar commercie en sport samenkomen.</p><dl class="facts rv"><div><dt>Student</dt><dd>Wassim El Mesbahi</dd></div><div><dt>Opleiding</dt><dd>Commerciële Economie, HvA</dd></div><div><dt>Klas</dt><dd>CE2F1</dd></div><div><dt>Leerpad</dt><dd>6, Sport en Sportfinanciën</dd></div><div><dt>Challenge</dt><dd>Koers Bepalen (N2)</dd></div><div><dt>Opdrachtgever</dt><dd>T-Line Sportcenter</dd></div><div><dt>Docenten</dt><dd>G. van Hout en R. van Oostwaard</dd></div><div><dt>Datum</dt><dd class="num">Oktober 2026</dd></div></dl><p class="photo-note">Op de foto sta ik in Málaga, in het shirt van het Marokkaans elftal. Ik koos deze foto omdat hij twee dingen laat zien die bij mij horen: mijn Marokkaanse roots, waar ik trots op ben, en mijn passie voor voetbal.</p></div></header>
 <main class="wrap">
 <section id="wiebenik"><div class="sec-head rv"><span class="idx">Voorblad</span><h2>Wie ben ik als strategisch sportmarketeer?</h2><p class="note">Voordat je leest waaraan ik werk, eerst iets over wie ik ben. Dat helpt om mijn keuzes in dit portfolio te plaatsen.</p></div><div class="stack"><article class="card rv">
@@ -241,7 +257,7 @@ body{font-size:16px}
   var spy=new IntersectionObserver(function(es){
     es.forEach(function(e){if(e.isIntersecting){
       links.forEach(function(a){a.classList.remove('active');});
-      var m=map[e.target.id];if(m)m.classList.add('active');
+      var m=map[e.target.id];if(m){m.classList.add('active');var n=m.parentNode;if(n.scrollWidth>n.clientWidth){n.scrollTo({left:m.offsetLeft-n.clientWidth/2+m.offsetWidth/2,behavior:'smooth'});}}
     }});
   },{rootMargin:'-45% 0px -50% 0px'});
   ['home','leerdoelen','leeruitkomsten','ceskills','reflectie','richting','bijlagen'].forEach(function(id){
