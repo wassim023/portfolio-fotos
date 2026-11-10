@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blok 2 · Fanbase Business Developer – Wassim El Mesbahi</title>
+<meta name="description" content="Portfolio blok 2, Fanbase Business Developer voor de KNHB (HOCKEY5s). Wassim El Mesbahi, Commerciële Economie HvA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+:root{
+  --turf:#123E73; --turf-2:#0C2E57; --line:#F5F8FC;
+  --paper:#ECF1F7; --sheet:#FFFFFF; --ink:#0E1A2B; --ink-2:#3B4A60; --ink-3:#6B7A90;
+  --rule:#D5DEEA; --oranje:#F2661B; --oranje-ink:#B8470A;
+  --maxw:880px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Open Sans",system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Archivo","Open Sans",sans-serif;font-stretch:72%;font-weight:800;line-height:1.02;margin:0;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0 0 14px;max-width:68ch}
+a{color:var(--turf)}
+:focus-visible{outline:3px solid var(--oranje);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,36px)}
+
+/* Topbar met blokwissel */
+.top{position:sticky;top:0;z-index:50;background:var(--turf-2);color:var(--line)}
+.top-in{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,36px);height:60px;display:flex;align-items:center;gap:18px}
+.switch{display:flex;background:rgba(255,255,255,.08);border-radius:999px;padding:3px;flex:none}
+.switch a{font-family:"Archivo",sans-serif;font-stretch:85%;font-weight:700;font-size:14px;text-decoration:none;color:#B9C8DC;padding:6px 14px;border-radius:999px;white-space:nowrap}
+.switch a:hover{color:#fff}
+.switch a[aria-current="page"]{background:var(--line);color:var(--turf-2)}
+.links{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{color:#B9C8DC;text-decoration:none;font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:6px;white-space:nowrap}
+.links a:hover,.links a.on{color:#fff;background:rgba(255,255,255,.1)}
+@media (max-width:640px){.top-in{height:auto;flex-wrap:wrap;padding-top:10px;padding-bottom:8px;gap:8px}.links{margin-left:0;width:100%}}
+
+/* Hero: het veld */
+.hero{background:var(--turf);color:var(--line);position:relative;overflow:hidden}
+.hero svg.pitch{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .wrap{position:relative;padding-top:clamp(48px,8vw,92px);padding-bottom:clamp(40px,6vw,64px)}
+.hero .who{font-weight:600;color:#B9C8DC;margin:0 0 18px}
+.hero h1{font-size:clamp(46px,9vw,100px);font-stretch:62%;font-weight:900;max-width:12ch;letter-spacing:-.01em}
+.hero .lede{font-size:clamp(17px,2.2vw,19px);color:#DCE5F1;max-width:56ch;margin:0}
+.hero-grid{display:grid;grid-template-columns:1fr 200px;gap:clamp(24px,5vw,48px);align-items:start;margin-top:28px}
+@media (max-width:720px){.hero-grid{grid-template-columns:1fr}}
+.photo{aspect-ratio:4/5;background:rgba(12,46,87,.55);border:2px dashed rgba(245,248,252,.45);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:#B9C8DC;font-size:14px}
+@media (max-width:720px){.photo{aspect-ratio:auto;min-height:90px;max-width:none}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin:40px 0 0;border-top:1px solid rgba(245,248,252,.25)}
+.facts div{padding:14px 16px 12px 0;border-bottom:1px solid rgba(245,248,252,.18)}
+.facts dt{font-size:13px;color:#9FB2CB;margin:0}
+.facts dd{margin:2px 0 0;font-weight:600;font-size:15px}
+
+/* Wedstrijdverloop leeruitkomsten */
+.match{background:var(--turf-2);color:var(--line);padding:clamp(32px,5vw,52px) 0}
+.match h2{font-size:clamp(28px,4.4vw,40px)}
+.match .intro{color:#B9C8DC;margin:10px 0 26px;max-width:62ch}
+.board{display:grid;grid-template-columns:minmax(150px,1.3fr) repeat(5,1fr);border-top:2px solid var(--line)}
+.board .h{font-family:"Archivo",sans-serif;font-stretch:80%;font-weight:700;font-size:14px;color:#9FB2CB;padding:12px 8px 10px;border-bottom:1px solid rgba(245,248,252,.2)}
+.board .lu{padding:14px 10px 14px 0;border-bottom:1px solid rgba(245,248,252,.14)}
+.board .lu b{font-family:"Archivo",sans-serif;font-stretch:72%;font-weight:900;font-size:26px;display:block;line-height:1}
+.board .lu span{font-size:13px;color:#C9D6E6;display:block;margin-top:4px;line-height:1.35}
+.cell{padding:14px 8px;border-bottom:1px solid rgba(245,248,252,.14);border-left:1px dashed rgba(245,248,252,.16);font-size:12.5px;line-height:1.35;color:#9FB2CB}
+.mark{display:block;width:14px;height:14px;border-radius:50%;border:2px solid rgba(245,248,252,.5);margin-bottom:7px}
+.cell.done{color:var(--line)} .cell.done .mark{background:var(--oranje);border-color:var(--oranje)}
+.cell.busy{color:var(--line)} .cell.busy .mark{border-color:var(--oranje);background:linear-gradient(90deg,var(--oranje) 50%,transparent 50%)}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:#B9C8DC}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend .mark{margin:0}
+@media (max-width:760px){
+  .board{grid-template-columns:1fr}
+  .board .h{display:none}
+  .board .lu{padding-top:22px;border-bottom:0}
+  .cell{border-left:0;display:grid;grid-template-columns:18px 92px 1fr;gap:8px;align-items:start;padding:8px 0;border-bottom:1px dashed rgba(245,248,252,.14)}
+  .cell .mark{margin:2px 0 0}
+  .cell::before{content:attr(data-fase);font-weight:700;color:#B9C8DC;grid-column:2;grid-row:1}
+  .cell .t{grid-column:3}
+}
+.js .cell .mark{transition:background-color .35s ease,border-color .35s ease}
+.js .board:not(.lit) .cell.done .mark,.js .board:not(.lit) .cell.busy .mark{background:transparent;border-color:rgba(245,248,252,.5)}
+
+/* Secties */
+main section{padding:clamp(48px,7vw,80px) 0;border-bottom:1px solid var(--rule)}
+main section:last-of-type{border-bottom:0}
+.sec-h{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;margin-bottom:26px}
+.sec-h .n{font-family:"Archivo",sans-serif;font-stretch:62%;font-weight:900;font-size:clamp(40px,6vw,58px);color:var(--oranje);line-height:.9}
+.sec-h h2{font-size:clamp(30px,4.6vw,46px)}
+.sec-h p{grid-column:2;color:var(--ink-3);margin:6px 0 0}
+h3{font-size:clamp(22px,3vw,28px);margin:34px 0 12px}
+h3:first-child{margin-top:0}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:4px;padding:clamp(20px,3vw,28px)}
+.kv{display:grid;grid-template-columns:190px 1fr;margin:0;border-top:1px solid var(--rule)}
+.kv dt{font-weight:700;padding:12px 16px 12px 0;border-bottom:1px solid var(--rule)}
+.kv dd{margin:0;padding:12px 0;border-bottom:1px solid var(--rule);color:var(--ink-2)}
+@media (max-width:620px){.kv{grid-template-columns:1fr}.kv dt{border-bottom:0;padding-bottom:0}}
+.smart{border-left:4px solid var(--oranje);padding:4px 0 4px 18px;margin:22px 0 0}
+.smart p{margin:0 0 10px}
+.todo{color:var(--ink-3);font-style:italic}
+.pill{display:inline-block;font-size:12.5px;font-weight:700;border-radius:999px;padding:2px 10px;border:1.5px solid currentColor;white-space:nowrap}
+.pill.busy{color:var(--oranje-ink)} .pill.plan{color:var(--ink-3)} .pill.ok{color:#1E7A4A}
+
+/* Invulbalk per LU */
+.lu-card{border-top:3px solid var(--turf);background:var(--sheet);padding:22px clamp(18px,3vw,26px) 18px;margin-bottom:18px}
+.lu-card header{display:flex;gap:14px;align-items:baseline}
+.lu-card header b{font-family:"Archivo",sans-serif;font-stretch:62%;font-weight:900;font-size:40px;color:var(--turf);line-height:.9;flex:none}
+.lu-card header p{margin:0;font-weight:600}
+.bar{width:100%;border-collapse:collapse;margin-top:16px;font-size:14.5px}
+.bar th{text-align:left;font-weight:700;color:var(--ink-3);font-size:13px;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)}
+.bar td{padding:10px 10px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+@media (max-width:680px){
+  .bar thead{display:none}.bar tr{display:block;padding:6px 0}.bar td{display:grid;grid-template-columns:130px 1fr;border:0;padding:4px 0}
+  .bar td::before{content:attr(data-l);font-weight:700;color:var(--ink-3);font-size:13px}
+}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--ink)}
+.skill{padding:20px 22px 20px 0;border-bottom:1px solid var(--rule)}
+.skill:nth-child(odd){border-right:1px solid var(--rule)}
+.skill:nth-child(even){padding-left:22px}
+.skill h4{font-size:24px;margin-bottom:8px}
+.skill.focus h4::after{content:"Mijn CE-skilldoel";font-family:"Open Sans",sans-serif;font-stretch:100%;font-size:12px;font-weight:700;color:var(--oranje-ink);margin-left:10px;vertical-align:middle}
+.skill p{margin:0;font-size:15px;color:var(--ink-2)}
+@media (max-width:620px){.skills{grid-template-columns:1fr}.skill:nth-child(odd){border-right:0}.skill:nth-child(even){padding-left:0}}
+
+/* Logboek */
+.log{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--sheet)}
+.log th{text-align:left;background:var(--turf);color:var(--line);font-weight:600;font-size:13.5px;padding:10px 12px}
+.log td{padding:12px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+.log td:first-child{white-space:nowrap;font-weight:700;color:var(--ink)}
+.scroll{overflow-x:auto;border:1px solid var(--rule)}
+.scroll .log{min-width:640px}
+.src{font-size:14px;color:var(--ink-2);padding-left:18px}
+.src li{margin:4px 0}
+
+footer{background:var(--turf-2);color:#B9C8DC;font-size:14px;padding:28px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--line)}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Portfolio">
+  <div class="top-in">
+    <div class="switch" role="navigation" aria-label="Kies blok">
+      <a href="../">Blok 1</a>
+      <a href="./" aria-current="page">Blok 2</a>
+    </div>
+    <div class="links" id="links">
+      <a href="#leerdoelen">Leerdoelen</a>
+      <a href="#leeruitkomsten">Leeruitkomsten</a>
+      <a href="#ceskills">CE-skills</a>
+      <a href="#terugblik">Terugblik en conclusie</a>
+      <a href="#bijlagen">Bijlagen</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="voorblad">
+  <svg class="pitch" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#F5F8FC" stroke-opacity=".07" stroke-width="3">
+      <line x1="500" y1="0" x2="500" y2="560"/>
+      <path d="M1000 120 A 190 160 0 0 0 1000 440"/>
+      <path d="M1000 90 A 230 190 0 0 0 1000 470" stroke-dasharray="10 12"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <p class="who">Wassim El Mesbahi, Commerciële Economie, HvA</p>
+    <h1>Van fan naar verdienmodel</h1>
+    <div class="hero-grid">
+      <div>
+        <p class="lede">Ik ben zelf een fan die geld uitgeeft aan sport zonder op het veld te staan. Die blik gebruik ik dit blok om te begrijpen waarom jongeren van 16 tot 24 wel of niet bij hockey blijven, en hoe de KNHB daar met HOCKEY5s iets aan kan verdienen zonder dat het voelt als verkopen.</p>
+      </div>
+      <div class="photo">Hier komt een nieuwe foto, met een korte uitleg waarom ik hem koos.</div>
+    </div>
+    <dl class="facts">
+      <div><dt>Challenge</dt><dd>Fanbase Business Developer</dd></div>
+      <div><dt>Opdrachtgever</dt><dd>KNHB, HOCKEY5s</dd></div>
+      <div><dt>Leergemeenschap</dt><dd>Business Development, CE2F1</dd></div>
+      <div><dt>Docent</dt><dd>Volgt</dd></div>
+      <div><dt>Periode</dt><dd>Blok 2, november 2026 tot assessment</dd></div>
+      <div><dt>Studentnummer</dt><dd>500972348</dd></div>
+    </dl>
+  </div>
+</header>
+
+<section class="match" aria-labelledby="stand">
+  <div class="wrap">
+    <h2 id="stand">Stand van mijn leeruitkomsten</h2>
+    <p class="intro">Alle vier de leeruitkomsten toon ik aan het eind aan. Per fase zie je waarmee ik dat doe en wat al af is. Bijgewerkt op 10 november 2026.</p>
+    <div class="board" id="board">
+      <div class="h">Leeruitkomst</div><div class="h">Kick-off</div><div class="h">Sprint 1, doelgroep</div><div class="h">Sprint 2, idee</div><div class="h">Sprint 3, verdienmodel</div><div class="h">Assessment</div>
+
+      <div class="lu"><b>LU1</b><span>Vernieuwend businessidee met verdienmodel</span></div>
+      <div class="cell done" data-fase="Kick-off"><i class="mark"></i><span class="t">Kennisbite BD-strategie (TLBM)</span></div>
+      <div class="cell" data-fase="Sprint 1"><i class="mark"></i><span class="t">Kansen uit onderzoek</span></div>
+      <div class="cell" data-fase="Sprint 2"><i class="mark"></i><span class="t">Fanconcept en prototype</span></div>
+      <div class="cell" data-fase="Sprint 3"><i class="mark"></i><span class="t">Businessmodel en go-to-market</span></div>
+      <div class="cell" data-fase="Assessment"><i class="mark"></i><span class="t">Toelichten</span></div>
+
+      <div class="lu"><b>LU2</b><span>Kwalitatief onderzoek naar businesskansen</span></div>
+      <div class="cell done" data-fase="Kick-off"><i class="mark"></i><span class="t">Kick-off KNHB</span></div>
+      <div class="cell" data-fase="Sprint 1"><i class="mark"></i><span class="t">Interviews, persona, empathy map</span></div>
+      <div class="cell" data-fase="Sprint 2"><i class="mark"></i><span class="t">Test met stakeholders</span></div>
+      <div class="cell" data-fase="Sprint 3"><i class="mark"></i><span class="t">Onderbouwing keuzes</span></div>
+      <div class="cell" data-fase="Assessment"><i class="mark"></i><span class="t">Toelichten</span></div>
+
+      <div class="lu"><b>LU3</b><span>Design Thinking voor een betere oplossing</span></div>
+      <div class="cell done" data-fase="Kick-off"><i class="mark"></i><span class="t">GoodHabitz Design thinking, 25/25</span></div>
+      <div class="cell" data-fase="Sprint 1"><i class="mark"></i><span class="t">Empathize en define</span></div>
+      <div class="cell" data-fase="Sprint 2"><i class="mark"></i><span class="t">Ideate, prototype, test</span></div>
+      <div class="cell" data-fase="Sprint 3"><i class="mark"></i><span class="t">Iteratie na feedback</span></div>
+      <div class="cell" data-fase="Assessment"><i class="mark"></i><span class="t">Toelichten</span></div>
+
+      <div class="lu"><b>LU4</b><span>Fanwaarden voor een duurzaam verdienmodel</span></div>
+      <div class="cell busy" data-fase="Kick-off"><i class="mark"></i><span class="t">Touchpoint Wie ben jij als fan</span></div>
+      <div class="cell" data-fase="Sprint 1"><i class="mark"></i><span class="t">Fanwaarden doelgroep</span></div>
+      <div class="cell" data-fase="Sprint 2"><i class="mark"></i><span class="t">Waardepropositie</span></div>
+      <div class="cell" data-fase="Sprint 3"><i class="mark"></i><span class="t">Fanbased verdienmodel</span></div>
+      <div class="cell" data-fase="Assessment"><i class="mark"></i><span class="t">Toelichten</span></div>
+    </div>
+    <div class="legend"><span><i class="mark" style="background:var(--oranje);border-color:var(--oranje)"></i>Bewijs binnen</span><span><i class="mark" style="border-color:var(--oranje);background:linear-gradient(90deg,var(--oranje) 50%,transparent 50%)"></i>Bezig</span><span><i class="mark"></i>Gepland</span></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <section id="leerdoelen">
+    <div class="sec-h"><span class="n">1</span><h2>Mijn leerdoelen</h2><p>Twee doelen, allebei volgens dezelfde route: kennis ophalen, uitproberen, bewijs verzamelen, evalueren.</p></div>
+
+    <h3>Communicatie: laten zien waar mijn woorden vandaan komen</h3>
+    <div class="sheet">
+      <dl class="kv">
+        <dt>Waarom dit doel</dt><dd>Ik zeg veel, maar laat te weinig zien waar het vandaan komt. In mijn eindfeedback van blok 1 (een 8) vroeg Greg vier keer waarom: waarom ik trots ben om Marokkaan te zijn, wat ik leerde van Mino's Imperium, wat de agressietraining met me deed en hoe die aansluit op de criteria voor communicatie. Ook schreef ik in de we-vorm in plaats van over mijn eigen rol.</dd>
+        <dt>Waar ik nu sta</dt><dd>Ik breng een bewering goed, maar niet altijd waar die op rust. Ik zeg bijvoorbeeld dat ik een leider ben, zonder het moment waarop ik dat liet zien.</dd>
+        <dt>Wat ik straks anders doe</dt><dd>Een uitspraak over mezelf koppel ik aan een echte gebeurtenis. Een keuze voor school koppel ik aan een bron of kennisbite. Ik schrijf in de ik-vorm over mijn eigen aandeel.</dd>
+        <dt>Kennis en methode</dt><dd>Bewering, onderbouwing en bewijs (argumentatiemodel van Toulmin) voor school, STARR voor persoonlijke voorbeelden. <span class="todo">Bron volgt.</span></dd>
+        <dt>Wat ik uitprobeer</dt><dd>Bij elke touchpoint check ik mijn tekst op losse beweringen. In teamoverleg vraag ik een teamgenoot mij te onderbreken met "waarom?" als ik iets zeg zonder onderbouwing.</dd>
+        <dt>Bewijs</dt><dd>Eerste en verbeterde versie van een tekst naast elkaar, feedback van docent en teamgenoten.</dd>
+      </dl>
+      <div class="smart">
+        <p><strong>Wanneer heb ik het gehaald?</strong> Als de feedback op mijn tussentijdse portfolio en in het assessment niet meer vraagt om ontbrekende onderbouwing, terwijl dat in blok 1 vier keer zo was. En als ik in het assessment elke waarom-vraag kan beantwoorden met een voorbeeld of een bron.</p>
+        <p>Ik meet bewust niet aan aantallen, zoals vijf podcasts luisteren. Een aantal laat zien dat ik iets deed, niet dat ik beter ben geworden.</p>
+      </div>
+    </div>
+
+    <h3>Persoonlijk leerdoel: richting zaakwaarnemer</h3>
+    <div class="sheet">
+      <p>Ik wil later zaakwaarnemer worden. Daarvoor moet ik commerciële gesprekken kunnen voeren met sportorganisaties en een deal onderbouwen met wat beide partijen eraan hebben. Mijn eerste idee voor dit semester: een waardepropositie leren pitchen en onderhandelen met een sportpartij, en een eerste stap zetten in mijn netwerk richting stage of minor.</p>
+      <p class="todo" style="margin:0">Dit doel werk ik verder uit met de zelfsturingsopdracht.</p>
+    </div>
+  </section>
+
+  <section id="leeruitkomsten">
+    <div class="sec-h"><span class="n">2</span><h2>Leeruitkomsten en bewijs</h2><p>Per leeruitkomst: de opdracht, de status, de feedback, wat ik aanpaste en wat mijn eigen aandeel was. Bewijs staat direct eronder.</p></div>
+
+    <article class="lu-card">
+      <header><b>LU1</b><p>Op basis van een business development-vraagstuk een vernieuwend businessidee met verdienmodel ontwikkelen, met oog voor technologische innovatie, meervoudige waardecreatie en ethisch handelen.</p></header>
+      <p class="todo" style="margin:14px 0 0">Bewijs volgt in sprint 2 en 3.</p>
+    </article>
+    <article class="lu-card">
+      <header><b>LU2</b><p>Op basis van kwalitatief onderzoek relevante inzichten vertalen naar businesskansen voor een nieuw of verbeterd businessconcept.</p></header>
+      <p class="todo" style="margin:14px 0 0">Bewijs volgt in sprint 1.</p>
+    </article>
+    <article class="lu-card">
+      <header><b>LU3</b><p>Design Thinking toepassen om de kwaliteit van de oplossing te verhogen.</p></header>
+      <p class="todo" style="margin:14px 0 0">Bewijs volgt vanaf sprint 1.</p>
+    </article>
+    <article class="lu-card">
+      <header><b>LU4</b><p>Fanbase Business Developer: specifieke fanwaarden van sportdoelgroepen identificeren om tot een duurzaam verdienmodel in de sport te komen.</p></header>
+      <table class="bar">
+        <thead><tr><th>Opdracht</th><th>Status</th><th>Feedback</th><th>Aangepast of geleerd</th><th>Mijn aandeel</th></tr></thead>
+        <tbody><tr><td data-l="Opdracht">Wie ben jij als fan?</td><td data-l="Status"><span class="pill busy">Bezig</span></td><td data-l="Feedback">Volgt</td><td data-l="Aangepast">Volgt</td><td data-l="Mijn aandeel">Individuele opdracht</td></tr></tbody>
+      </table>
+    </article>
+  </section>
+
+  <section id="ceskills">
+    <div class="sec-h"><span class="n">3</span><h2>CE-skills in de praktijk</h2><p>Per skill kort waar ik het liet zien, gekoppeld aan een opdracht en bewijs.</p></div>
+    <div class="skills">
+      <div class="skill"><h4>Creativiteit</h4><p class="todo">Volgt bij de brainstorm in sprint 2.</p></div>
+      <div class="skill"><h4>Samenwerken</h4><p>Op de eerste lesdag nam ik de klassenapp over en voegde ik de nieuwe studenten toe. Een teamgenoot zat nog in Zuid-Afrika; ik mailde hem om zijn nummer, zodat hij vanaf dag 1 in onze groepsapp kan meelezen.</p></div>
+      <div class="skill focus"><h4>Communicatie</h4><p>Zie mijn leerdoel hierboven.</p></div>
+      <div class="skill"><h4>Zelfsturing</h4><p>Bij de touchpoint Wie ben jij als fan onderzoek ik eerst mijn eigen fangedrag, als start van de empathize-fase.</p></div>
+    </div>
+  </section>
+
+  <section id="terugblik">
+    <div class="sec-h"><span class="n">4</span><h2>Terugblik en conclusie</h2><p>Schrijf ik aan het eind van het blok.</p></div>
+    <div class="sheet">
+      <p>Na de kick-off schreef ik op: de docenten hebben hoge verwachtingen van mij en de lat ligt hoog. Mijn vraag voor dit blok is of ik consistent blijf als de druk oploopt. Ik weet dat ik het kan, maar of ik het ook onder druk kan, laat ik aan het eind zien.</p>
+      <p class="todo" style="margin:0">Hier komen mijn betekenisvolle terugblik (What, So what, Now what) en mijn conclusie over de beroepsrol en richting niveau 3.</p>
+    </div>
+  </section>
+
+  <section id="bijlagen">
+    <div class="sec-h"><span class="n">5</span><h2>Bijlagen en logboek</h2><p>Wat ik per week deed en welke feedback ik kreeg. Nieuwste bovenaan.</p></div>
+    <h3>Bewijslog</h3>
+    <div class="scroll"><table class="log">
+      <thead><tr><th>Datum</th><th>Wat ik deed of leerde</th><th>Koppeling</th></tr></thead>
+      <tbody>
+        <tr><td>10 nov</td><td>Kick-off KNHB met Kees Broese van Groenou en Boukje Smeets. De KNHB heeft geen lidmaatschap voor fans; fans geven nu vooral geld uit aan merchandise, de fandag en evenementen. Behoud van 16- tot 24-jarigen is een doel (+2,5%).</td><td>LU2, LU4</td></tr>
+        <tr><td>9 nov</td><td>Klassenapp overgenomen, nieuwe studenten toegevoegd en teamgenoot in Zuid-Afrika gemaild voor zijn nummer.</td><td>Samenwerken</td></tr>
+        <tr><td>9 nov</td><td>Kennisbites Design thinking (GoodHabitz, eindtoets 25/25), Customer journey als businesstool (quiz 100%) en De business development-strategie (Edumundo).</td><td>LU1, LU3</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Feedbacklogboek</h3>
+    <div class="scroll"><table class="log">
+      <thead><tr><th>Datum</th><th>Van wie en waarop</th><th>Feedback</th><th>Wat ik ermee doe</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>28 okt</td><td>Gregory van Hout, eindbeoordeling blok 1 (8)</td><td>Verzorgd en persoonlijk. Maar: waarom trots om Marokkaan te zijn, wat leerde ik van Mino's Imperium, wat deed de agressietraining met mij? Ik schreef in de we-vorm.</td><td>Dit is mijn CE-skilldoel voor blok 2 geworden. Dit feedbackpunt is mijn nulmeting.</td><td><span class="pill busy">Loopt</span></td></tr>
+      </tbody>
+    </table></div>
+    <h3>Bronnen</h3>
+    <ul class="src">
+      <li>KNHB (2026). Kick-off presentatie Fanbase BD2, blok 2.</li>
+      <li>HvA (2026). Challengeomschrijving Fanbase Business Developer, blok 2.</li>
+      <li>GoodHabitz (z.j.). Training Design thinking.</li>
+      <li>Schoemaker (2026). De customer journey als businesstool. Kennisbite HvA.</li>
+      <li>Edumundo (z.j.). De business development-strategie. CE Next niveau 2.</li>
+    </ul>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Portfolio Wassim El Mesbahi, Commerciële Economie, HvA</span><span><a href="../">Bekijk blok 1, Koers Bepalen</a></span></div></footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var board=document.getElementById('board');
+  var marks=[].slice.call(board.querySelectorAll('.cell.done .mark,.cell.busy .mark'));
+  marks.forEach(function(m,i){m.style.transitionDelay=(i*120)+'ms';});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){board.classList.add('lit');io.disconnect();}});},{threshold:.35});
+  io.observe(board);
+  var links=[].slice.call(document.querySelectorAll('#links a'));
+  var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('main section').forEach(function(s){spy.observe(s);});
+})();
+</script>
+</body>
+</html>
