@@ -116,6 +116,14 @@ h3:first-child{margin-top:0}
   .bar td::before{content:attr(data-l);font-weight:700;color:var(--ink-3);font-size:13px}
 }
 
+.trip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.trip figure{margin:0}
+.trip img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.trip figure:last-child{grid-column:span 2}
+.trip figure:last-child img{aspect-ratio:auto;height:calc(100% - 70px);min-height:200px}
+.trip figcaption{font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.45}
+@media (max-width:680px){.trip{grid-template-columns:1fr 1fr}.trip figure:last-child{grid-column:span 2}.trip figure:last-child img{height:auto;aspect-ratio:4/3}}
+
 /* Skills */
 .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--ink)}
 .skill{padding:20px 22px 20px 0;border-bottom:1px solid var(--rule)}
@@ -273,7 +281,13 @@ footer a{color:var(--line)}
         <thead><tr><th>Opdracht</th><th>Status</th><th>Feedback</th><th>Aangepast of geleerd</th><th>Mijn aandeel</th></tr></thead>
         <tbody><tr><td data-l="Opdracht">Wie ben jij als fan?</td><td data-l="Status"><span class="pill busy">Concept klaar</span></td><td data-l="Feedback">Volgt</td><td data-l="Geleerd">Ik ben fan van de beleving, niet alleen van een club. Ik reis ook naar clubs waar ik niets mee heb, en van elke club neem ik een shirt mee als bewijs dat ik er was. Gemak telt waar het de beleving beschermt: bij Milan kon je op je plek pinnen voor drinken, zodat je geen doelpunt mist. Die inzichten vertaalde ik naar idee&euml;n voor HOCKEY5s: een stadsevent, iets verzamelbaars per event en bestellen zonder rij.</td><td data-l="Mijn aandeel">Individueel. Mijn voetbaltrip naar Milaan (Milan&ndash;Inter, 3-1) en Lugano (Lugano&ndash;Basel, 2-1) als bron, gekoppeld aan de kennisbite Customer journey als businesstool.</td></tr></tbody>
       </table>
-      <p class="todo" style="margin:12px 0 0">Bewijs: foto&rsquo;s van de trip en de ingeleverde touchpoint volgen.</p>
+      <div class="trip">
+        <figure><img src="san-siro.jpg" alt="San Siro van buiten" loading="lazy"><figcaption>San Siro van buiten. Ik reis voor het stadion en de stad, niet alleen voor de 90 minuten.</figcaption></figure>
+        <figure><img src="san-siro-tour.jpg" alt="De spelerstunnel tijdens de stadiontour" loading="lazy"><figcaption>Stadion- en museumtour voor &euro;&nbsp;37: beleving en nostalgie, ook zonder wedstrijd.</figcaption></figure>
+        <figure><img src="san-siro-derby.jpg" alt="Wassim en zijn beste vriend in Milan-shirts in San Siro" loading="lazy"><figcaption>Na Milan&ndash;Inter (3-1) met mijn beste vriend, allebei in het shirt uit de fanshop. Samen gaan maakte van het plan een trip.</figcaption></figure>
+        <figure><img src="lugano-fanshop.jpg" alt="FC Lugano Official Store" loading="lazy"><figcaption>De fanshop van Lugano: shirts, mokken en flessen, alles in clubstijl. Zo blijft de club thuis bij je.</figcaption></figure>
+        <figure><img src="lugano-basel.jpg" alt="FC Lugano tegen FC Basel, 2-1 op het scorebord" loading="lazy"><figcaption>Lugano&ndash;Basel (2-1) voor &euro;&nbsp;30: een club waar ik niets mee heb, om het voetbal te vergelijken met de Eredivisie.</figcaption></figure>
+      </div>
     </article>
   </section>
 
