@@ -132,6 +132,13 @@ h3:first-child{margin-top:0}
 .trip img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
 .trip figure:last-child{grid-column:span 2}
 .trip figure:last-child img{aspect-ratio:auto;height:calc(100% - 70px);min-height:200px}
+.info{display:grid;grid-template-columns:minmax(0,280px) 1fr;gap:22px;align-items:start;margin-top:26px;padding-top:22px;border-top:1px solid var(--line,#D5DEEA)}
+.info a.thumb{display:block;border:1px solid var(--line,#D5DEEA);border-radius:4px;overflow:hidden}
+.info a.thumb img{display:block;width:100%;height:auto}
+.info h4{margin:0 0 6px}
+.info p{margin:0 0 12px;font-size:15px;line-height:1.55}
+.info .dl{display:inline-block;padding:8px 14px;border:1.5px solid currentColor;border-radius:4px;font-weight:600;text-decoration:none}
+@media (max-width:680px){.info{grid-template-columns:1fr}}
 .trip figcaption{font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.45}
 @media (max-width:680px){.trip{grid-template-columns:1fr 1fr}.trip figure:last-child{grid-column:span 2}.trip figure:last-child img{height:auto;aspect-ratio:4/3}}
 
@@ -293,6 +300,14 @@ footer a{color:var(--line)}
         <figure><img src="lugano-fanshop.jpg" alt="FC Lugano Official Store" loading="lazy"><figcaption>De fanshop van FC Lugano. Naast shirts verkoopt de club ook mokken en flessen in clubstijl.</figcaption></figure>
         <figure><img src="lugano-basel.jpg" alt="FC Lugano tegen FC Basel, 2-1 op het scorebord" loading="lazy"><figcaption>FC Lugano&ndash;FC Basel (2-1), kaartje &euro;&nbsp;30. Ik ging om het niveau te vergelijken met de Eredivisie, niet omdat ik fan ben van Lugano.</figcaption></figure>
       </div>
+      <div class="info">
+        <a class="thumb" href="infographic-wie-ben-jij-als-fan.pdf" target="_blank" rel="noopener"><img src="infographic-wie-ben-jij-als-fan.jpg" alt="Infographic Wie ben jij als fan? met mijn uitgaven, fanquiz, klantreis, theorie, empathy map en kansen voor de KNHB" loading="lazy"></a>
+        <div>
+          <h4>Infographic bij de touchpoint</h4>
+          <p>De touchpoint heb ik uitgewerkt als verslag met deze infographic als overzicht. De infographic is opgebouwd rond de drie beoordelingscriteria: terugblik op mijn fangedrag, de koppeling met de theorie (customer journey, Fanbase marketeer en Design Thinking) en de vertaling naar de KNHB. De onderbouwing en bronnen staan in het verslag.</p>
+          <a class="dl" href="infographic-wie-ben-jij-als-fan.pdf" target="_blank" rel="noopener">Infographic openen (PDF)</a>
+        </div>
+      </div>
     </article>
   </section>
 
@@ -320,6 +335,7 @@ footer a{color:var(--line)}
     <div class="scroll"><table class="log">
       <thead><tr><th>Datum</th><th>Wat ik deed of leerde</th><th>Koppeling</th></tr></thead>
       <tbody>
+        <tr><td>11 nov</td><td>Touchpoint afgerond als verslag met infographic. Design Thinking toegevoegd met een empathy map en point-of-view; dubbele stukken uit de tekst gehaald en de bronnen in APA gecontroleerd.</td><td>LU3, LU4, zelfsturing</td></tr>
         <tr><td>10 nov</td><td>Touchpoint Wie ben jij als fan uitgewerkt: mijn voetbaltrip naar Milaan en Lugano als klantreis, gekoppeld aan de kennisbites Customer journey en Fanbase marketeer. Uitslag fanquiz: fanatieke fan, vooral buiten het internet betrokken.</td><td>LU4, zelfsturing</td></tr>
         <tr><td>10 nov</td><td>Kick-off KNHB met Kees Broese van Groenou en Boukje Smeets. De KNHB heeft geen lidmaatschap voor fans; fans geven nu vooral geld uit aan merchandise, de fandag en evenementen. Behoud van 16- tot 24-jarigen is een doel (+2,5%).</td><td>LU2, LU4</td></tr>
         <tr><td>9 nov</td><td>Klassenapp overgenomen, nieuwe studenten toegevoegd en teamgenoot in Zuid-Afrika gemaild voor zijn nummer.</td><td>Samenwerken</td></tr>
