@@ -158,11 +158,12 @@ h3:first-child{margin-top:0}
 .log th{text-align:left;background:var(--turf);color:var(--line);font-weight:600;font-size:13.5px;padding:10px 12px}
 .log td{padding:12px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
 .log td:first-child{white-space:nowrap;font-weight:700;color:var(--ink)}
-.bewijs{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:24px;align-items:start;background:var(--sheet);border:1px solid var(--rule);padding:20px;margin-bottom:28px}
+.bewijs{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start;background:var(--sheet);border:1px solid var(--rule);padding:20px;margin-bottom:28px}
 .bewijs img{display:block;width:100%;height:auto;border:1px solid var(--rule)}
 .bewijs h4{margin:0 0 6px}.bewijs p{margin:0 0 10px;font-size:15px;line-height:1.55}
 .tag{font-size:13px!important;font-weight:700;color:var(--ink-3)}
-.bewijs.dev{grid-template-columns:1fr}.bewijs.dev .log{font-size:14px}
+.bewijs.dev{grid-template-columns:1fr}
+.scroll .log.cmp{min-width:0;table-layout:fixed}.log.cmp th,.log.cmp td{width:50%}.log.cmp td:first-child{white-space:normal;font-weight:400;color:var(--ink-2)}.bewijs.dev .log{font-size:14px}
 @media (max-width:680px){.bewijs{grid-template-columns:minmax(0,1fr);padding:14px}.bewijs>*{min-width:0}.bewijs .log td{grid-template-columns:88px minmax(0,1fr)}}
 .scroll{overflow-x:auto;border:1px solid var(--rule)}
 .scroll .log{min-width:640px}
@@ -171,6 +172,7 @@ h3:first-child{margin-top:0}
   .log tr{display:block;border:1px solid var(--rule);margin-bottom:10px;background:var(--sheet)}
   .log td{display:grid;grid-template-columns:96px 1fr;gap:8px;border:0;padding:6px 12px;white-space:normal}
   .log td::before{content:attr(data-l);font-weight:700;color:var(--ink-3);font-size:12.5px}
+  .log td:first-child{white-space:normal}
 }
 .src{font-size:14px;color:var(--ink-2);padding-left:18px}
 .src li{margin:4px 0}
@@ -352,8 +354,15 @@ footer a{color:var(--line)}
       <a href="bewijs-mail-ties.jpg" target="_blank" rel="noopener"><img src="bewijs-mail-ties.jpg" alt="Mail van Wassim aan teamgenoot Ties, ook verstuurd aan Robert van Oostwaard, over de WhatsApp-groep van projectgroep 6" loading="lazy"></a>
       <div>
         <h4>B1. Mail aan Ties over de groepsapp (9 november)</h4>
-        <p>Ties zat bij de start van het blok nog op vakantie in Zuid-Afrika. Ik mailde hem namens onze projectgroep om zijn telefoonnummer, zodat hij in onze WhatsApp-groep kon en vanaf dag 1 op de hoogte was. De mail ging ook naar mijn mentor en ik verwees naar het document dat Bodi hem zou sturen.</p>
-        <p><b>Waarom dit bewijsstuk:</b> het laat zien dat ik proactief contact zoek en zorg dat het hele team vanaf de start aangesloten is. Alle leeruitkomsten werken we als groep uit, dus een team dat vanaf dag 1 compleet is, is de basis voor ons onderzoek en concept.</p>
+        <p><b>Situatie:</b> bij de start van blok 2 zat Ties, een teamgenoot uit projectgroep 6, nog op vakantie in Zuid-Afrika. Hij zat nog niet in onze WhatsApp-groep en miste dus de eerste afspraken.</p>
+        <p><b>Taak:</b> zorgen dat het hele team vanaf dag 1 aangesloten is, ook wie er nog niet is.</p>
+        <p><b>Actie:</b> ik mailde Ties namens de groep om zijn telefoonnummer. De mail ging ook naar mijn mentor, en ik liet weten dat Bodi hem een document zou sturen zodat hij op de hoogte was.</p>
+        <p><b>Resultaat:</b> Ties reageerde en zit nu in de groepsapp.</p>
+        <div class="scroll"><table class="log cmp">
+          <thead><tr><th>Blok 1</th><th>Blok 2</th></tr></thead>
+          <tbody><tr><td data-l="Blok 1">Ik ging er altijd zelf achteraan als er iets met het team geregeld moest worden.</td><td data-l="Blok 2">Bodi neemt ook initiatief. Hij heeft veel kennis en maakt dingen af. Mijn kracht ligt in leiding geven en structuur aanbrengen in een groep. Ik kijk daarom bewust welke rol bij mij past, in plaats van alles zelf op te pakken.</td></tr></tbody>
+        </table></div>
+        <p><b>Reflectie:</b> het nieuwe voor mij is niet dat ik initiatief neem, maar dat ik me bewust ben van wat ik zeg en doe en hoe dat past naast iemand die ook initiatief neemt. Dat sluit aan bij de skillkaart: inzicht in je eigen rol in het team. Volgende stap: in de groep uitspreken wie wat oppakt, zodat Bodi en ik elkaar aanvullen in plaats van dubbel werk te doen.</p>
         <span class="tag">Koppeling: CE-skill samenwerken, als basis voor het teamwerk aan LU1 en LU2</span>
       </div>
     </div>
