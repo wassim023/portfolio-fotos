@@ -121,8 +121,8 @@ h3:first-child{margin-top:0}
 .bar{width:100%;border-collapse:collapse;margin-top:16px;font-size:14.5px}
 .bar th{text-align:left;font-weight:700;color:var(--ink-3);font-size:13px;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule)}
 .bar td{padding:10px 10px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
-.bar{table-layout:fixed}.bar th:nth-child(1){width:16%}.bar th:nth-child(2){width:15%}.bar th:nth-child(3){width:10%}.bar th:nth-child(4){width:37%}.bar th:nth-child(5){width:22%}
-@media (max-width:680px){
+.bar{table-layout:fixed}.bar th:nth-child(1){width:14%}.bar th:nth-child(2){width:13%}.bar th:nth-child(3){width:13%}.bar th:nth-child(4){width:38%}.bar th:nth-child(5){width:22%}.bar .pill{white-space:normal;text-align:center;justify-self:start}
+@media (max-width:900px){
   .bar{table-layout:auto}.bar thead{display:none}.bar tr{display:block;padding:6px 0}.bar td{display:grid;grid-template-columns:130px 1fr;border:0;padding:4px 0}
   .bar td::before{content:attr(data-l);font-weight:700;color:var(--ink-3);font-size:13px}
 }
@@ -159,6 +159,12 @@ h3:first-child{margin-top:0}
 .log td:first-child{white-space:nowrap;font-weight:700;color:var(--ink)}
 .scroll{overflow-x:auto;border:1px solid var(--rule)}
 .scroll .log{min-width:640px}
+@media (max-width:680px){
+  .scroll{overflow:visible;border:0}.scroll .log{min-width:0}.log thead,.log tr:has(th){display:none}
+  .log tr{display:block;border:1px solid var(--rule);margin-bottom:10px;background:var(--sheet)}
+  .log td{display:grid;grid-template-columns:96px 1fr;gap:8px;border:0;padding:6px 12px;white-space:normal}
+  .log td::before{content:attr(data-l);font-weight:700;color:var(--ink-3);font-size:12.5px}
+}
 .src{font-size:14px;color:var(--ink-2);padding-left:18px}
 .src li{margin:4px 0}
 
@@ -291,7 +297,7 @@ footer a{color:var(--line)}
       <header><b>LU4</b><p>Fanbase Business Developer: specifieke fanwaarden van sportdoelgroepen identificeren om tot een duurzaam verdienmodel in de sport te komen.</p></header>
       <table class="bar">
         <thead><tr><th>Opdracht</th><th>Status</th><th>Feedback</th><th>Aangepast of geleerd</th><th>Mijn aandeel</th></tr></thead>
-        <tbody><tr><td data-l="Opdracht">Wie ben jij als fan?</td><td data-l="Status"><span class="pill ok">Klaar om in te leveren</span></td><td data-l="Feedback">Volgt na inleveren</td><td data-l="Geleerd">Uit mijn voetbaltrip blijkt dat ik vooral betaal voor de beleving: het stadion, de stad en de sfeer. Ik bezoek ook clubs waar ik geen fan van ben en neem van elke club een shirt mee als herinnering. Samen gaan is voor mij de belangrijkste drijfveer (erbij horen; Denton, 2015, zoals geciteerd in HvA, 2026a). Volgens de fanquiz ben ik een fanatieke fan, maar mijn betrokkenheid speelt zich vooral buiten het internet af; aan online wedstrijden voor fans doe ik niet mee. Bij de derby kregen leden en seizoenkaarthouders voorrang bij de kaartverkoop. De KNHB heeft geen lidmaatschap voor fans, dus voorrang op schaarse momenten kan een reden zijn om lid te worden. Of jongeren van 16 tot 24 jaar daarvoor willen betalen, onderzoek ik in sprint 1.</td><td data-l="Mijn aandeel">Individueel. Mijn voetbaltrip naar Milaan en Lugano (30 okt&ndash;2 nov 2026, &euro;&nbsp;447 aan kaartjes, tour en shirt) als bron, gekoppeld aan de kennisbites Customer journey als businesstool en Fanbase marketeer (Denton).</td></tr></tbody>
+        <tbody><tr><td data-l="Opdracht">Wie ben jij als fan?</td><td data-l="Status"><span class="pill ok">Klaar</span></td><td data-l="Feedback">Volgt</td><td data-l="Geleerd">Uit mijn voetbaltrip blijkt dat ik vooral betaal voor de beleving: het stadion, de stad en de sfeer. Ik bezoek ook clubs waar ik geen fan van ben en neem van elke club een shirt mee als herinnering. Samen gaan is voor mij de belangrijkste drijfveer (erbij horen; Denton, 2015, zoals geciteerd in HvA, 2026a). Volgens de fanquiz ben ik een fanatieke fan, maar mijn betrokkenheid speelt zich vooral buiten het internet af; aan online wedstrijden voor fans doe ik niet mee. Bij de derby kregen leden en seizoenkaarthouders voorrang bij de kaartverkoop. De KNHB heeft geen lidmaatschap voor fans, dus voorrang op schaarse momenten kan een reden zijn om lid te worden. Of jongeren van 16 tot 24 jaar daarvoor willen betalen, onderzoek ik in sprint 1.</td><td data-l="Mijn aandeel">Individueel. Mijn voetbaltrip naar Milaan en Lugano (30 okt&ndash;2 nov 2026, &euro;&nbsp;447 aan kaartjes, tour en shirt) als bron, gekoppeld aan de kennisbites Customer journey als businesstool en Fanbase marketeer (Denton).</td></tr></tbody>
       </table>
       <div class="trip">
         <figure><img src="san-siro.jpg" alt="San Siro van buiten" loading="lazy"><figcaption>San Siro van buiten, op de dag van de stadiontour. Het stadion en de stad zijn voor mij net zo belangrijk als de wedstrijd zelf.</figcaption></figure>
@@ -335,19 +341,19 @@ footer a{color:var(--line)}
     <div class="scroll"><table class="log">
       <thead><tr><th>Datum</th><th>Wat ik deed of leerde</th><th>Koppeling</th></tr></thead>
       <tbody>
-        <tr><td>12 nov</td><td>Leidraad Responsible Business Development doorgenomen. Per sprint gepland hoe ik ethisch verantwoord handelen aantoon: onderzoeksethiek-check (sprint 1), Ethical Design Review (sprint 2) en Responsible Business Model Check (sprint 3).</td><td>LU1</td></tr>
-        <tr><td>11 nov</td><td>Touchpoint afgerond als verslag van 8 pagina's met infographic als bijlage. Het verslag volgt de drie delen van de opdracht; elke uitspraak is onderbouwd met mijn trip of een kennisbite. Design Thinking toegevoegd met een empathy map en point-of-view. Bronnen in APA.</td><td>LU3, LU4, communicatie</td></tr>
-        <tr><td>10 nov</td><td>Touchpoint Wie ben jij als fan uitgewerkt: mijn voetbaltrip naar Milaan en Lugano als klantreis, gekoppeld aan de kennisbites Customer journey en Fanbase marketeer. Uitslag fanquiz: fanatieke fan, vooral buiten het internet betrokken.</td><td>LU4, zelfsturing</td></tr>
-        <tr><td>10 nov</td><td>Kick-off KNHB met Kees Broese van Groenou en Boukje Smeets. De KNHB heeft geen lidmaatschap voor fans; fans geven nu vooral geld uit aan merchandise, de fandag en evenementen. Behoud van 16- tot 24-jarigen is een doel (+2,5%).</td><td>LU2, LU4</td></tr>
-        <tr><td>9 nov</td><td>Klassenapp overgenomen, nieuwe studenten toegevoegd en teamgenoot in Zuid-Afrika gemaild voor zijn nummer.</td><td>Samenwerken</td></tr>
-        <tr><td>9 nov</td><td>Kennisbites Design thinking (GoodHabitz, eindtoets 25/25), Customer journey als businesstool (quiz 100%) en De business development-strategie (Edumundo).</td><td>LU1, LU3</td></tr>
+        <tr><td data-l="Datum">12 nov</td><td data-l="Wat ik deed of leerde">Leidraad Responsible Business Development doorgenomen. Per sprint gepland hoe ik ethisch verantwoord handelen aantoon: onderzoeksethiek-check (sprint 1), Ethical Design Review (sprint 2) en Responsible Business Model Check (sprint 3).</td><td data-l="Koppeling">LU1</td></tr>
+        <tr><td data-l="Datum">11 nov</td><td data-l="Wat ik deed of leerde">Touchpoint afgerond als verslag van 8 pagina's met infographic als bijlage. Het verslag volgt de drie delen van de opdracht; elke uitspraak is onderbouwd met mijn trip of een kennisbite. Design Thinking toegevoegd met een empathy map en point-of-view. Bronnen in APA.</td><td data-l="Koppeling">LU3, LU4, communicatie</td></tr>
+        <tr><td data-l="Datum">10 nov</td><td data-l="Wat ik deed of leerde">Touchpoint Wie ben jij als fan uitgewerkt: mijn voetbaltrip naar Milaan en Lugano als klantreis, gekoppeld aan de kennisbites Customer journey en Fanbase marketeer. Uitslag fanquiz: fanatieke fan, vooral buiten het internet betrokken.</td><td data-l="Koppeling">LU4, zelfsturing</td></tr>
+        <tr><td data-l="Datum">10 nov</td><td data-l="Wat ik deed of leerde">Kick-off KNHB met Kees Broese van Groenou en Boukje Smeets. De KNHB heeft geen lidmaatschap voor fans; fans geven nu vooral geld uit aan merchandise, de fandag en evenementen. Behoud van 16- tot 24-jarigen is een doel (+2,5%).</td><td data-l="Koppeling">LU2, LU4</td></tr>
+        <tr><td data-l="Datum">9 nov</td><td data-l="Wat ik deed of leerde">Klassenapp overgenomen, nieuwe studenten toegevoegd en teamgenoot in Zuid-Afrika gemaild voor zijn nummer.</td><td data-l="Koppeling">Samenwerken</td></tr>
+        <tr><td data-l="Datum">9 nov</td><td data-l="Wat ik deed of leerde">Kennisbites Design thinking (GoodHabitz, eindtoets 25/25), Customer journey als businesstool (quiz 100%) en De business development-strategie (Edumundo).</td><td data-l="Koppeling">LU1, LU3</td></tr>
       </tbody>
     </table></div>
     <h3>Feedbacklogboek</h3>
     <div class="scroll"><table class="log">
       <thead><tr><th>Datum</th><th>Van wie en waarop</th><th>Feedback</th><th>Wat ik ermee doe</th><th>Status</th></tr></thead>
       <tbody>
-        <tr><td>28 okt</td><td>Gregory van Hout, eindbeoordeling blok 1 (8)</td><td>Het portfolio was verzorgd en persoonlijk. Greg vroeg wel door: waarom ben ik trots om Marokkaan te zijn, wat heb ik geleerd van Mino's Imperium en wat deed de agressietraining met mij? Ook schreef ik in de we-vorm.</td><td>Ik heb dit punt als CE-skilldoel voor blok 2 gekozen en gebruik deze feedback als nulmeting.</td><td><span class="pill busy">Loopt</span></td></tr>
+        <tr><td data-l="Datum">28 okt</td><td data-l="Van wie en waarop">Gregory van Hout, eindbeoordeling blok 1 (8)</td><td data-l="Feedback">Het portfolio was verzorgd en persoonlijk. Greg vroeg wel door: waarom ben ik trots om Marokkaan te zijn, wat heb ik geleerd van Mino's Imperium en wat deed de agressietraining met mij? Ook schreef ik in de we-vorm.</td><td data-l="Wat ik ermee doe">Ik heb dit punt als CE-skilldoel voor blok 2 gekozen en gebruik deze feedback als nulmeting.</td><td data-l="Status"><span class="pill busy">Loopt</span></td></tr>
       </tbody>
     </table></div>
     <h3>Bronnen</h3>
